@@ -1,6 +1,4 @@
-<sidebar>
-	<h1>SIDEBAR</h1>
-</sidebar>
+<body class="Home-page">
 
 <?php
 	echo $content;

@@ -1,9 +1,10 @@
 <?php
 	
-	// Функция включает буферизацию (то есть ничего не выводится, а записывается в буфер)
+	$currentUser = $_SESSION['logged_user'];
+		
 	ob_start();
-		// Загружаем страницу с ее заметкой и передаем в переменную, чтобы вывести уже в template.tpl
 		include ROOT . "templates/_parts/_header.tpl";
+		include ROOT . "templates/profile/profile.tpl";
 		$content = ob_get_contents();
 	ob_end_clean();
 	
